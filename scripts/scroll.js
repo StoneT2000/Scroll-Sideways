@@ -16,18 +16,18 @@ $(document).on("ready",function(){
     if (scroll_pos >= halfW+180){
       //$("#p0 p").css("display","block");
       for (var i = 0; i< p0_timers.length; i++){
-        console.log("clear!")
+        //console.log("clear!")
         clearInterval(p0_timers[i]);
         if (i == p0_timers.length-1){
           p0_timers = [];
         }
       }
     } 
-    console.log(scroll_pos)
+    //console.log(scroll_pos)
     if (left_break_stage >= 0){
       if (scroll_pos + 50 <= prev_scroll_pos && scroll_pos == 0){
         //Scrolling left...
-        console.log("hit left side")
+        //console.log("hit left side")
         if (left_break_stage == 0){
           $(".container").css("margin-left","50px");
           //$("body").css("width","43650px");

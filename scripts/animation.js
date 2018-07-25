@@ -14,7 +14,6 @@ $(document).on("ready", function(){
     var offsetx = ($(".container").height()/2 - 4);
     var posx = e.pageY - offsetx + 95;
     var percent = 200- posx;
-    console.log(offsetx,posx);
     if (percent < 10){
       percent = 10;
     }

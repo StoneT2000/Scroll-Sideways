@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  
+  <!-- Make sure mobile width is width of mobile viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+  <title>...</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel ="stylesheet" href="styles/base.css">
+  <link rel ="stylesheet" href="styles/index.css">
+  <link rel ="stylesheet" href="styles/water.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!--Add additional scripts here-->
+  <script src="scripts/scroll.js?version=4"></script>
+  <script src="scripts/messages.js?version=4"></script>
+  <!--For that glass of water-->
+  <script src ="scripts/animation.js?version=4"></script>
+</head>
+<body>
+  <div class="container">
+    <!--All page content goes here -->
+    <div class="row mainContent">
+      <div class="part" style="margin-left:-5000px;position: absolute;width:600px;text-align: right;"><span>Some nice poly art:<p style="font-size:12px;line-height: 20px;margin-top:20px;">Made on this website: <a href="http://stonet2000.github.io/Polytomizator/">http://stonet2000.github.io/Polytomizator/</a><br>(A shameful plug I know.)</p></span></div>
+      
+      <div class="part" style="margin-left:-4700px;position: absolute;width:600px;"><span><img class="svg" id="Poly0" src="images/mountainPoly.svg" width="100px" style="display:inline-block;margin-left:100px;"></span></div>
+      
+      
+      <div class="part" style="margin-left:-3000px;position: absolute;"><span>Congrats, you didn't follow the arrow and ended up finding this place.</span></div>
+      <div class="part" style="margin-left:-1000px;position: absolute;"><span>O.o, you actaully broke that wall</span></div>
+      <div id="leftWall"></div>
+      <div class = "part" id="p0" style="font-size:150px;line-height: 300px;margin-right: 0px;left:-300px;position: absolute;margin-left:0px;"><i class="fas fa-arrow-right"></i><br><p style="font-size:20px;display: none;line-height: 20px;">(Scroll Right)</p></div>
+      <div class = "part" id="p1" style=""><span>Keep scrolling, interesting things to come!</span></div>
+      <div class = "part" id="p2"><span>Did you know "The Great Gatsby" by F. Scott Fitzgerald used to be called "Trimalchio in West Egg" 😂 (or maybe its just me who finds it funny)</span></div>
+      <div class = "part" id="p3"><span><br><i class="fas fa-arrow-right"></i><br><i class="fas fa-arrow-right"></i><br>This Way <br><i class="fas fa-arrow-right"></i><br><i class="fas fa-arrow-right"></i></span></div>
+      <div class = "part" id="p4"><span>Apparently it's illegal to own just one guinea pig in Switzerland 🇨🇭</span></div>
+      <div class = "part" id="p5"><span>Here, have some <p id="watert" style="color:deepskyblue;border: 2px dashed;width:100px;margin: auto;margin-top:10px;margin-bottom:10px;" onclick="changeWaterColor(0)">water</p><p id="coffeet" style="margin: auto;margin-top:10px;margin-bottom:10px; width:100px;" onclick="changeWaterColor(1)">coffee</p> before you move on</span>
+        <div style="height:100%;width:500px;" id="waterglass">        
+          <div class="cup" id="glass"></div>
+          <div class="cup" id="water" ></div>
+          <div class="cup" id="cupBot"></div>
+        </div>
+      </div>
+      <div class= "part" id="p6"><span>Almost there</span></div>
+      <div class= "part" id="p7"><span id="ratingFeedback">From 1-10, how pointless is this site? Be honest.<input id="ratingInput" style="height:50px;text-align: center;margin-top: 20px;" type="text" placeholder="1-10"><div id="rating" style="background-color:deepskyblue;color:white;margin-top:20px;cursor:pointer;" onclick="parseRating()">Submit</div></span></div>
+      <div class= "part" id="p8"><span>Ever wonder what would have happened had you not scrolled to the right? I certainly don't.</span></div>
+
+      <div class= "part" id="p8"><span>Boring site right?</span></div>
+      <div class= "part" id="p100" style="margin-right:0px;"><span>The end!</span></div>
+      <div class="part" style="width:600px;margin-left:-200px"><span><img class="svg" id="Poly0" src="images/earthPoly.svg" width="100px" style="display:inline-block;margin-left:100px;"></span></div>
+    </div>
+  </div>
+  <div class="footer">
+    <h6>By Stone T. @</h6>
+    <h6>Github </h6> <a href="https://github.com/StoneT2000"><i class="fab fa-github"></i></a>
+    <h6 style="margin-right: 5px;margin-left: 5px">|</h6>
+    <h6>Email</h6> <a href="mailto:stoneztao@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
+</body>
+</html>

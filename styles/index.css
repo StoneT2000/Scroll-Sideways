@@ -1,0 +1,103 @@
+body {
+  width:43600px;
+  height:100%;
+  overflow-x: auto;
+}
+.mainContent {
+  width:100%;
+  height:100%;
+  
+}
+#p0 i {
+  line-height: 300px;
+  
+  
+  
+}
+.part{
+  margin-left:4000px;
+  height: 300px;
+  width:300px;
+  line-height: 300px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top:50%;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+}
+.mainContent span {
+  /*IMPORTANT< THIS CENTERS TEXT VERT.!*/
+  line-height:30px;
+  font-size:30px;
+  position: absolute;
+  left:0;
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+}
+#p5 p{
+  line-height:35px;
+  font-size:30px;
+  margin-bottom:0;
+  cursor: pointer;
+}
+#p0{
+  
+  transition: left 2s;
+  -webkit-transition:left 2s;
+  -moz-transition:left 2s;
+  -ms-transition:left 2s;
+  -o-transition:left 2s;
+}
+#rating {
+  line-height:40px;
+}
+
+#leftWall {
+  height: 100%;
+  width:0px;
+  left:-10px;
+  position: absolute;
+  border: 5px dashed RGB(230,230,230);
+}
+
+#Poly0{
+
+  margin-left:100px;
+  width: 400px;
+  font-size: 20px;
+  border: 10px solid;
+  height:auto;
+  color:lightgray;
+  
+}
+@media only screen and (max-height:530px){
+  .mainContent span{
+    line-height:20px;
+    font-size:20px;
+  }
+  #p5 p{
+    line-height:20px;
+    font-size:20px;
+  }
+}
+@media only screen and (max-width:350px){
+  .part{
+    width:200px;
+  }
+  .mainContent span{
+    line-height:20px;
+    font-size:20px;
+  }
+  #p5 p{
+    line-height:30px;
+    font-size:25px;
+  }
+  #rating {
+    line-height:25px;
+  }
+  
+}

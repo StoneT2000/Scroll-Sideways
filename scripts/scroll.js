@@ -1,5 +1,6 @@
 var p0_timers = [];
 $(document).on("ready",function(){
+  $(document).scrollLeft(0)
   var halfW = window.innerWidth;
   halfW/=2
   halfW-=150;
@@ -25,7 +26,7 @@ $(document).on("ready",function(){
     } 
     //console.log(scroll_pos)
     if (left_break_stage >= 0){
-      if (scroll_pos + 50 <= prev_scroll_pos && scroll_pos == 0){
+      if (scroll_pos + 5 <= prev_scroll_pos && scroll_pos == 0){
         //Scrolling left...
         //console.log("hit left side")
         if (left_break_stage == 0){
@@ -39,6 +40,9 @@ $(document).on("ready",function(){
         }
         else if (left_break_stage == 2){
           $(".container").css("margin-left","5200px");
+          $(document).scrollLeft(4600)
+          //$("body").css("overflow","hidden")
+          //window.setTimeout(function(){$("body").css("overflow","")},200);
           //Break left wall
           left_break_stage ++;
         }

@@ -1,5 +1,5 @@
 body {
-  width:43600px;
+  width:23600px;
   height:100%;
   overflow-x: auto;
 }
@@ -15,7 +15,7 @@ body {
   
 }
 .part{
-  margin-left:4000px;
+  margin-left:2000px;
   height: 300px;
   width:300px;
   line-height: 300px;

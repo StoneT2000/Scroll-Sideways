@@ -1,6 +1,6 @@
 var p0_timers = [];
 $(document).on("ready",function(){
-  $(document).scrollLeft(0)
+  $(document).scrollLeft(10)
   var halfW = window.innerWidth;
   halfW/=2
   halfW-=150;
@@ -12,6 +12,7 @@ $(document).on("ready",function(){
   var timer = 0;
   
   var left_break_stage = 0;
+  
   function doSomething(scroll_pos) {
     // do something with the scroll position
     if (scroll_pos >= halfW+180){
@@ -26,27 +27,32 @@ $(document).on("ready",function(){
     } 
     //console.log(scroll_pos)
     if (left_break_stage >= 0){
-      if (scroll_pos + 5 <= prev_scroll_pos && scroll_pos == 0){
+      if (scroll_pos == 0){
         //Scrolling left...
         //console.log("hit left side")
         if (left_break_stage == 0){
-          $(".container").css("margin-left","50px");
-          //$("body").css("width","43650px");
-          left_break_stage ++;
+          $(".container").css("margin-left","100px");
+          $(document).scrollLeft(100)
         }
         else if (left_break_stage == 1){
-          left_break_stage ++;
-          $(".container").css("margin-left","100px");
+          $(".container").css("margin-left","200px");
+          $(document).scrollLeft(200)
         }
         else if (left_break_stage == 2){
-          $(".container").css("margin-left","5200px");
-          $(document).scrollLeft(4600)
+          $(".container").css("margin-left","300px");
+          $(document).scrollLeft(300)
           //$("body").css("overflow","hidden")
           //window.setTimeout(function(){$("body").css("overflow","")},200);
           //Break left wall
-          left_break_stage ++;
         }
-        
+        else if (left_break_stage == 3){
+          $(".container").css("margin-left","5200px");
+          $(document).scrollLeft(5200)
+          //$("body").css("overflow","hidden")
+          //window.setTimeout(function(){$("body").css("overflow","")},200);
+          //Break left wall
+        }
+        left_break_stage ++;
       }
     }
   }
